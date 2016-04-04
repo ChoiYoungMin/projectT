@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="com.index.projectsns.Activity_main">
+
+    <RelativeLayout
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mento_service"/>
+
+
+        <ImageView
+            android:layout_marginLeft="120dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/azit"/>
+
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/search_icon"/>
+
+        <ImageView
+            android:layout_marginRight="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/schedule_create_4"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/num1"
+        android:gravity="center"
+        android:background="@android:color/holo_green_dark"
+        android:id="@+id/num2">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="프로젝트T :) 현재 가장 인기있는 이야기들 입니다."/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" />
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
